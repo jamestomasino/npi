@@ -11,7 +11,7 @@ def main():
     try:
         npi = sys.argv[1]
     except:
-        npi = "1234567890"
+        npi = ""
     data = get_npi_data(npi)
     if not check_error(data):
         doc = hcp(data)
