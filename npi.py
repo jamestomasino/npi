@@ -21,7 +21,7 @@ def main():
         print (doc.last_updated())
         print (doc.get_addresses())
     else:
-        print ("No record found for NPI")
+        print ("No record found for NPI: " + npi)
 
 def check_error(data):
     if "Errors" in data:
