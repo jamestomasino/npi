@@ -1,3 +1,5 @@
+from address import address
+
 class hcp:
     _data = []
 
@@ -43,9 +45,9 @@ class hcp:
         try:
             addresses = self._data["results"][0]["addresses"]
             valid_addresses = []
-            for address in addresses:
-                if address["address_purpose"] == "LOCATION":
-                    valid_addresses.append(address)
+            for add in addresses:
+                if add["address_purpose"] == "LOCATION":
+                    valid_addresses.append(address(add))
             return valid_addresses
         except:
             pass

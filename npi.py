@@ -19,7 +19,7 @@ def main():
         print (doc.get_last_name())
         print (doc.is_active())
         print (doc.last_updated())
-        print (doc.get_addresses())
+        doc.get_addresses()
     else:
         print ("No record found for NPI: " + npi)
 
